@@ -1,47 +1,33 @@
-# Lars Rosevink - persoonlijke CV-site
+# larsrosevink.nl
 
-Dit is een eenvoudige, statische persoonlijke website voor `https://www.larsrosevink.nl`.
-De site is bewust minimalistisch, privacybewust en zonder externe frameworks of build tools opgezet.
+Statische persoonlijke website voor `https://www.larsrosevink.nl`.
 
-## Inhoud
+De site is opgebouwd met gewone HTML, CSS en vanilla JavaScript. Er zijn geen frameworks, build tools of externe assets nodig. De bestanden kunnen rechtstreeks in de root van een GitHub-repository worden geplaatst en via Vercel worden gepubliceerd.
 
-- `index.html` - Home
-- `about.html` - Over
-- `portfolio.html` - Bescheiden portfolio / projecten in ontwikkeling
-- `resume.html` - Compact resume
-- `contact.html` - Contact via e-mail en LinkedIn
-- `404.html` - Foutpagina
-- `style.css` - Styling
-- `script.js` - Mobiel menu en jaartal in footer
-- `robots.txt` - Crawling-instructies
-- `sitemap.xml` - Sitemap voor zoekmachines
-- `favicon.svg` - Eenvoudige favicon
+## Bestanden
 
-## Publiceren via GitHub en Vercel
+- `index.html` - homepage
+- `about.html` - achtergrond en interesses
+- `portfolio.html` - projecten en ideeën
+- `resume.html` - compacte loopbaanpagina
+- `contact.html` - e-mail en LinkedIn
+- `404.html` - foutpagina
+- `style.css` - styling
+- `script.js` - mobiele navigatie en jaartal
+- `favicon.svg` - eenvoudige favicon
+- `robots.txt` - crawler-instructies
+- `sitemap.xml` - sitemap voor zoekmachines
 
-1. Maak een nieuwe GitHub repository aan.
-2. Upload alle bestanden uit deze map naar de root van de repository.
-3. Importeer de repository in Vercel.
-4. Koppel `www.larsrosevink.nl` als custom domain in Vercel.
-5. Controleer of de canonical URL's en sitemap goed blijven staan.
+## Publiceren via Vercel
+
+1. Upload alle bestanden naar de root van je GitHub-repository.
+2. Importeer de repository in Vercel.
+3. Kies voor een statische site zonder build command.
+4. Koppel het domein `www.larsrosevink.nl` aan het Vercel-project.
 
 ## Aanpassen
 
-Controleer vooral:
-
-- teksten op de Home- en About-pagina;
-- projectstatussen op `portfolio.html`;
-- details en datums op `resume.html`;
-- LinkedIn-link en e-mailadres op `contact.html`;
-- eventueel toevoegen van een zakelijke portretfoto.
-
-## Privacykeuzes
-
-Deze versie bevat bewust geen:
-
-- telefoonnummer;
-- woonadres;
-- geboortedatum;
-- contactformulier;
-- analytics of tracking;
-- externe fonts of scripts.
+- Contactadres: wijzig `notifylars@gmail.com` in de HTML-bestanden.
+- LinkedIn-link: wijzig de URL in `index.html`, `contact.html` en de JSON-LD op de homepage.
+- Portfolio: voeg projecten toe in `portfolio.html` zodra ze geschikt zijn om te tonen.
+- Kleuren en spacing: pas de CSS-variabelen bovenaan `style.css` aan.
