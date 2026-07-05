@@ -6,6 +6,12 @@
 
   if (!stage || !avatar || !tooltip) return;
 
+  const defaultStrings = {
+    defaultStatus: 'Loop naar een object om een pagina te openen.',
+    press: 'Druk op E voor {label}',
+    nearby: 'In de buurt: {label}. Druk op E of tik op het object.'
+  };
+
   const base = { width: 860, height: 540 };
   const state = {
     x: 430,
@@ -17,7 +23,6 @@
 
   const objects = Array.from(stage.querySelectorAll('[data-room-target]')).map((element) => ({
     element,
-    label: element.dataset.label || 'page',
     href: element.getAttribute('href'),
     x: Number(element.dataset.x || 0),
     y: Number(element.dataset.y || 0)
@@ -33,6 +38,14 @@
     ArrowRight: 'right',
     KeyD: 'right'
   };
+
+  function strings() {
+    return window.siteLanguageStrings || defaultStrings;
+  }
+
+  function labelFor(object) {
+    return object.element.dataset.label || 'pagina';
+  }
 
   function clamp(value, min, max) {
     return Math.max(min, Math.min(max, value));
@@ -54,17 +67,20 @@
   }
 
   function setTooltip(target) {
+    const t = strings();
+
     if (!target) {
       tooltip.hidden = true;
-      if (status) status.textContent = 'Move near an object to open a page.';
+      if (status) status.textContent = t.defaultStatus;
       return;
     }
 
+    const label = labelFor(target);
     tooltip.hidden = false;
-    tooltip.textContent = `Press E to open ${target.label}`;
+    tooltip.textContent = t.press.replace('{label}', label);
     tooltip.style.left = toPercent(state.x, base.width);
     tooltip.style.top = toPercent(state.y - 78, base.height);
-    if (status) status.textContent = `Nearby: ${target.label}. Press E or tap the object.`;
+    if (status) status.textContent = t.nearby.replace('{label}', label);
   }
 
   function updateNearest() {
@@ -147,6 +163,8 @@
       event.preventDefault();
     }
   });
+
+  window.addEventListener('languagechange', updateNearest);
 
   stage.addEventListener('click', () => {
     stage.focus({ preventScroll: true });

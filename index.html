@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lars Rosevink | Data, policy and digital experiments</title>
-  <meta name="description" content="Personal website of Lars Rosevink, Data Policy Advisor at Univ&eacute;, with a small interactive room and concise professional context.">
+  <title>Lars Rosevink | Data, beleid en digitale experimenten</title>
+  <meta name="description" content="Persoonlijke website van Lars Rosevink, data beleidsadviseur bij Univé, met een interactieve pixelkamer en compacte professionele context.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://www.larsrosevink.nl/">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="Lars Rosevink | Data, policy and digital experiments">
-  <meta property="og:description" content="Personal website of Lars Rosevink, Data Policy Advisor at Univ&eacute;, with a small interactive room and concise professional context.">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="Lars Rosevink | Data, beleid en digitale experimenten">
+  <meta property="og:description" content="Persoonlijke website van Lars Rosevink, data beleidsadviseur bij Univé, met een interactieve pixelkamer en compacte professionele context.">
   <meta property="og:url" content="https://www.larsrosevink.nl/">
   <meta name="theme-color" content="#12344f">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -23,7 +23,7 @@
   "jobTitle": "Data Policy Advisor",
   "worksFor": {
     "@type": "Organization",
-    "name": "Univ\u00e9"
+    "name": "Univé"
   },
   "sameAs": [
     "https://www.linkedin.com/in/lars-rosevink-8b160312b/"
@@ -41,8 +41,9 @@
   ]
 }</script>
 </head>
-<body data-page="home">
-  <a class="skip-link" href="#main">Skip to content</a>
+<body data-page="home" data-language="nl">
+
+  <a class="skip-link" href="#main" data-i18n="global.skip">Naar inhoud</a>
 
   <header class="site-header">
     <div class="nav-shell">
@@ -50,93 +51,103 @@
         <span class="brand-mark" aria-hidden="true">LR</span>
         <span class="brand-text">Lars Rosevink</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
-      <nav class="site-menu" id="site-menu" aria-label="Main navigation">
-        <a href="index.html" data-nav-page="home">Home</a>
-        <a href="about.html" data-nav-page="about">About</a>
-        <a href="portfolio.html" data-nav-page="portfolio">Portfolio</a>
-        <a href="resume.html" data-nav-page="resume">Resume</a>
-        <a href="contact.html" data-nav-page="contact">Contact</a>
+      <nav class="site-menu" id="site-menu" aria-label="Hoofdnavigatie" data-i18n-attr="aria-label:attr.navMain">
+        <a href="index.html" data-nav-page="home" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-nav-page="about" data-i18n="nav.about">Over</a>
+        <a href="portfolio.html" data-nav-page="portfolio" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="resume.html" data-nav-page="resume" data-i18n="nav.resume">CV</a>
+        <a href="contact.html" data-nav-page="contact" data-i18n="nav.contact">Contact</a>
       </nav>
+      <div class="nav-actions">
+        <div class="language-switch" role="group" aria-label="Taalkeuze" data-i18n-attr="aria-label:attr.languageSwitch">
+          <button class="lang-button" type="button" data-lang-switch="nl" aria-pressed="true" aria-label="Nederlands">
+            <span class="flag" aria-hidden="true">🇳🇱</span><span class="lang-code">NL</span>
+          </button>
+          <button class="lang-button" type="button" data-lang-switch="en" aria-pressed="false" aria-label="English">
+            <span class="flag" aria-hidden="true">🇬🇧</span><span class="lang-code">EN</span>
+          </button>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-i18n="global.menu">Menu</button>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <section class="hero home-hero">
       <div class="hero-copy">
-        <p class="eyebrow">Personal website</p>
-        <h1>A small digital room for data, ideas and work in progress.</h1>
-        <p class="hero-text">I am Lars Rosevink, a Data Policy Advisor at Univ&eacute;. I work around data quality, governance and practical improvement, and I like building small digital experiments alongside that.</p>
+        <p class="eyebrow" data-i18n="home.eyebrow">Persoonlijke website</p>
+        <h1 data-i18n="home.h1">Een kleine digitale kamer voor data, ideeën en werk in ontwikkeling.</h1>
+        <p class="hero-text" data-i18n="home.lead">Ik ben Lars Rosevink, data beleidsadviseur bij Univé. Ik werk aan datakwaliteit, governance en praktische verbetering, en bouw daarnaast graag kleine digitale experimenten.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#room-title">Enter the room</a>
-          <a class="button" href="resume.html">View resume</a>
-          <a class="button ghost" href="contact.html">Contact</a>
+          <a class="button primary" href="#room-title" data-i18n="home.enterRoom">Ga de kamer in</a>
+          <a class="button" href="resume.html" data-i18n="home.viewResume">Bekijk CV</a>
+          <a class="button ghost" href="contact.html" data-i18n="home.contact">Contact</a>
         </div>
       </div>
-      <aside class="intro-card" aria-label="Profile summary">
+      <aside class="intro-card" aria-label="Profielsamenvatting" data-i18n-attr="aria-label:attr.profileSummary">
         <div class="portrait-placeholder" aria-hidden="true">LR</div>
         <div>
-          <p class="card-label">Currently</p>
-          <p class="card-title">Data Policy Advisor</p>
-          <p class="card-note">Data quality, governance, analysis and practical digital tools.</p>
+          <p class="card-label" data-i18n="home.currently">Momenteel</p>
+          <p class="card-title" data-i18n="home.role">Data beleidsadviseur</p>
+          <p class="card-note" data-i18n="home.roleNote">Datakwaliteit, governance, analyse en praktische digitale tools.</p>
         </div>
       </aside>
     </section>
 
     <section class="room-section" aria-labelledby="room-title">
       <div class="section-heading">
-        <p class="eyebrow">Interactive homepage</p>
-        <h2 id="room-title">Walk around the room.</h2>
-        <p>Use arrow keys or WASD. Move close to an object and press E, or click/tap an object directly.</p>
+        <p class="eyebrow" data-i18n="home.roomEyebrow">Interactieve homepage</p>
+        <h2 id="room-title" data-i18n="home.roomTitle">Loop door de kamer.</h2>
+        <p data-i18n="home.roomLead">Gebruik de pijltjestoetsen of WASD. Loop naar een object en druk op E, of klik/tik direct op een object.</p>
       </div>
 
       <div class="room-layout">
         <div class="room-panel">
           <div class="room-status" aria-live="polite">
-            <span id="interaction-status">Move near an object to open a page.</span>
+            <span id="interaction-status" data-i18n="room.defaultStatus">Loop naar een object om een pagina te openen.</span>
           </div>
 
-          <div class="room-stage" id="room-stage" tabindex="0" aria-label="Interactive isometric room. Use arrow keys or WASD to move Lars around the room.">
+          <div class="room-stage" id="room-stage" tabindex="0" aria-label="Interactieve isometrische kamer. Gebruik pijltjestoetsen of WASD om Lars door de kamer te bewegen." data-i18n-attr="aria-label:attr.roomStage">
             <div class="room-wall wall-left" aria-hidden="true"></div>
             <div class="room-wall wall-right" aria-hidden="true"></div>
             <div class="room-floor" aria-hidden="true"></div>
 
-            <a class="room-object object-door" href="index.html" data-room-target data-label="Home" data-x="430" data-y="130" aria-label="Open Home page">
+            <a class="room-object object-door" href="index.html" data-room-target data-room-key="home" data-label="Home" data-x="430" data-y="130" aria-label="Open de homepage" data-i18n-attr="aria-label:attr.openHome">
               <span class="door-panel"></span>
-              <span class="welcome-mat">Home</span>
+              <span class="welcome-mat" data-i18n="nav.home">Home</span>
             </a>
 
-            <a class="room-object object-desk" href="about.html" data-room-target data-label="About" data-x="260" data-y="350" aria-label="Open About page">
+            <a class="room-object object-desk" href="about.html" data-room-target data-room-key="about" data-label="Over" data-x="260" data-y="350" aria-label="Open de pagina Over" data-i18n-attr="aria-label:attr.openAbout">
               <span class="desk-top"></span>
               <span class="desk-leg left"></span>
               <span class="desk-leg right"></span>
               <span class="laptop-screen"></span>
               <span class="laptop-base"></span>
-              <span class="object-caption">About</span>
+              <span class="object-caption" data-i18n="nav.about">Over</span>
             </a>
 
-            <a class="room-object object-shelf" href="resume.html" data-room-target data-label="Resume" data-x="135" data-y="235" aria-label="Open Resume page">
+            <a class="room-object object-shelf" href="resume.html" data-room-target data-room-key="resume" data-label="CV" data-x="135" data-y="235" aria-label="Open de CV-pagina" data-i18n-attr="aria-label:attr.openResume">
               <span class="shelf-frame"></span>
               <span class="book book-a"></span>
               <span class="book book-b"></span>
               <span class="book book-c"></span>
               <span class="paper-stack"></span>
-              <span class="object-caption">Resume</span>
+              <span class="object-caption" data-i18n="nav.resume">CV</span>
             </a>
 
-            <a class="room-object object-board" href="portfolio.html" data-room-target data-label="Portfolio" data-x="565" data-y="260" aria-label="Open Portfolio page">
+            <a class="room-object object-board" href="portfolio.html" data-room-target data-room-key="portfolio" data-label="Portfolio" data-x="565" data-y="260" aria-label="Open de portfolio-pagina" data-i18n-attr="aria-label:attr.openPortfolio">
               <span class="board-frame"></span>
               <span class="note note-a"></span>
               <span class="note note-b"></span>
               <span class="note note-c"></span>
-              <span class="object-caption">Portfolio</span>
+              <span class="object-caption" data-i18n="nav.portfolio">Portfolio</span>
             </a>
 
-            <a class="room-object object-mail" href="contact.html" data-room-target data-label="Contact" data-x="650" data-y="400" aria-label="Open Contact page">
+            <a class="room-object object-mail" href="contact.html" data-room-target data-room-key="contact" data-label="Contact" data-x="650" data-y="400" aria-label="Open de contactpagina" data-i18n-attr="aria-label:attr.openContact">
               <span class="mail-post"></span>
               <span class="mail-box"></span>
               <span class="mail-flag"></span>
-              <span class="object-caption">Contact</span>
+              <span class="object-caption" data-i18n="nav.contact">Contact</span>
             </a>
 
             <div class="avatar" id="avatar" aria-hidden="true">
@@ -148,25 +159,25 @@
               <span class="avatar-leg leg-right"></span>
             </div>
 
-            <div class="room-tooltip" id="room-tooltip" hidden>Press E</div>
+            <div class="room-tooltip" id="room-tooltip" hidden>Druk op E</div>
           </div>
 
-          <div class="mobile-controls" aria-label="Movement controls">
-            <button type="button" data-move="up" aria-label="Move up">Up</button>
-            <button type="button" data-move="left" aria-label="Move left">Left</button>
-            <button type="button" data-move="down" aria-label="Move down">Down</button>
-            <button type="button" data-move="right" aria-label="Move right">Right</button>
-            <button type="button" data-action="interact" aria-label="Open nearby object">Open</button>
+          <div class="mobile-controls" aria-label="Bewegingsknoppen" data-i18n-attr="aria-label:attr.movementControls">
+            <button type="button" data-move="up" aria-label="Beweeg omhoog" data-i18n="controls.up" data-i18n-attr="aria-label:attr.moveUp">Omhoog</button>
+            <button type="button" data-move="left" aria-label="Beweeg naar links" data-i18n="controls.left" data-i18n-attr="aria-label:attr.moveLeft">Links</button>
+            <button type="button" data-move="down" aria-label="Beweeg omlaag" data-i18n="controls.down" data-i18n-attr="aria-label:attr.moveDown">Omlaag</button>
+            <button type="button" data-move="right" aria-label="Beweeg naar rechts" data-i18n="controls.right" data-i18n-attr="aria-label:attr.moveRight">Rechts</button>
+            <button type="button" data-action="interact" aria-label="Open object in de buurt" data-i18n="controls.open" data-i18n-attr="aria-label:attr.openNearby">Openen</button>
           </div>
         </div>
 
         <aside class="room-help">
-          <h3>Objects in the room</h3>
+          <h3 data-i18n="home.objectsTitle">Objecten in de kamer</h3>
           <ul>
-            <li><strong>Desk</strong> About</li>
-            <li><strong>Bookshelf</strong> Resume</li>
-            <li><strong>Pinboard</strong> Portfolio</li>
-            <li><strong>Mailbox</strong> Contact</li>
+            <li><strong data-i18n="home.objectDesk">Bureau</strong> <span data-i18n="nav.about">Over</span></li>
+            <li><strong data-i18n="home.objectShelf">Boekenkast</strong> <span data-i18n="nav.resume">CV</span></li>
+            <li><strong data-i18n="home.objectBoard">Prikbord</strong> <span data-i18n="nav.portfolio">Portfolio</span></li>
+            <li><strong data-i18n="home.objectMail">Brievenbus</strong> <span data-i18n="nav.contact">Contact</span></li>
           </ul>
         </aside>
       </div>
@@ -174,34 +185,35 @@
 
     <section class="cards-section" aria-labelledby="quick-links-title">
       <div class="section-heading compact">
-        <p class="eyebrow">Quick links</p>
-        <h2 id="quick-links-title">Prefer the normal route?</h2>
+        <p class="eyebrow" data-i18n="home.quickEyebrow">Snelle routes</p>
+        <h2 id="quick-links-title" data-i18n="home.quickTitle">Liever gewoon klikken?</h2>
       </div>
       <div class="card-grid">
         <a class="nav-card" href="about.html">
           <span>01</span>
-          <h3>About</h3>
-          <p>A short introduction to my work, interests and way of thinking.</p>
+          <h3 data-i18n="nav.about">Over</h3>
+          <p data-i18n="home.cardAbout">Een korte introductie over mijn werk, interesses en manier van denken.</p>
         </a>
         <a class="nav-card" href="portfolio.html">
           <span>02</span>
-          <h3>Portfolio</h3>
-          <p>Small experiments and ideas that will grow over time.</p>
+          <h3 data-i18n="nav.portfolio">Portfolio</h3>
+          <p data-i18n="home.cardPortfolio">Kleine experimenten en ideeën die verder kunnen groeien.</p>
         </a>
         <a class="nav-card" href="resume.html">
           <span>03</span>
-          <h3>Resume</h3>
-          <p>A concise overview of experience, education and skills.</p>
+          <h3 data-i18n="nav.resume">CV</h3>
+          <p data-i18n="home.cardResume">Een compact overzicht van ervaring, opleiding en vaardigheden.</p>
         </a>
         <a class="nav-card" href="contact.html">
           <span>04</span>
-          <h3>Contact</h3>
-          <p>Email and LinkedIn in one simple place.</p>
+          <h3 data-i18n="nav.contact">Contact</h3>
+          <p data-i18n="home.cardContact">E-mail en LinkedIn op één eenvoudige plek.</p>
         </a>
       </div>
     </section>
 
   </main>
+
 
   <footer class="site-footer">
     <div class="footer-inner">

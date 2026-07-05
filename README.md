@@ -2,6 +2,16 @@
 
 A static personal website for `larsrosevink.nl` with an original retro isometric room interface.
 
+## What is included
+
+- Dutch content as the default language
+- English language toggle in the top-right navigation
+- Language choice saved in local storage
+- Interactive room navigation on the homepage
+- Accessible fallback navigation
+- Responsive mobile controls
+- No external dependencies, cookies, tracking scripts or build tools
+
 ## Files
 
 - `index.html` - homepage with interactive room
@@ -12,7 +22,7 @@ A static personal website for `larsrosevink.nl` with an original retro isometric
 - `404.html` - not found page
 - `style.css` - all styling and room visuals
 - `game.js` - room movement and interaction logic
-- `content.js` - navigation and footer behavior
+- `content.js` - navigation, language toggle and footer behavior
 - `robots.txt` - crawler instructions
 - `sitemap.xml` - sitemap
 - `favicon.svg` - favicon
@@ -27,7 +37,3 @@ A static personal website for `larsrosevink.nl` with an original retro isometric
 ## Local preview
 
 Open `index.html` directly in a browser. All links use relative paths and work locally.
-
-## Notes
-
-The site uses only HTML, CSS and vanilla JavaScript. There are no external dependencies, cookies, tracking scripts or build tools.

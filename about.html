@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About | Lars Rosevink</title>
-  <meta name="description" content="About Lars Rosevink: data, governance, process improvement and practical digital experiments.">
+  <title>Over | Lars Rosevink</title>
+  <meta name="description" content="Over Lars Rosevink: data, governance, procesverbetering en praktische digitale experimenten.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://www.larsrosevink.nl/about.html">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="About | Lars Rosevink">
-  <meta property="og:description" content="About Lars Rosevink: data, governance, process improvement and practical digital experiments.">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="Over | Lars Rosevink">
+  <meta property="og:description" content="Over Lars Rosevink: data, governance, procesverbetering en praktische digitale experimenten.">
   <meta property="og:url" content="https://www.larsrosevink.nl/about.html">
   <meta name="theme-color" content="#12344f">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -23,7 +23,7 @@
   "jobTitle": "Data Policy Advisor",
   "worksFor": {
     "@type": "Organization",
-    "name": "Univ\u00e9"
+    "name": "Univé"
   },
   "sameAs": [
     "https://www.linkedin.com/in/lars-rosevink-8b160312b/"
@@ -41,8 +41,9 @@
   ]
 }</script>
 </head>
-<body data-page="about">
-  <a class="skip-link" href="#main">Skip to content</a>
+<body data-page="about" data-language="nl">
+
+  <a class="skip-link" href="#main" data-i18n="global.skip">Naar inhoud</a>
 
   <header class="site-header">
     <div class="nav-shell">
@@ -50,57 +51,68 @@
         <span class="brand-mark" aria-hidden="true">LR</span>
         <span class="brand-text">Lars Rosevink</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
-      <nav class="site-menu" id="site-menu" aria-label="Main navigation">
-        <a href="index.html" data-nav-page="home">Home</a>
-        <a href="about.html" data-nav-page="about">About</a>
-        <a href="portfolio.html" data-nav-page="portfolio">Portfolio</a>
-        <a href="resume.html" data-nav-page="resume">Resume</a>
-        <a href="contact.html" data-nav-page="contact">Contact</a>
+      <nav class="site-menu" id="site-menu" aria-label="Hoofdnavigatie" data-i18n-attr="aria-label:attr.navMain">
+        <a href="index.html" data-nav-page="home" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-nav-page="about" data-i18n="nav.about">Over</a>
+        <a href="portfolio.html" data-nav-page="portfolio" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="resume.html" data-nav-page="resume" data-i18n="nav.resume">CV</a>
+        <a href="contact.html" data-nav-page="contact" data-i18n="nav.contact">Contact</a>
       </nav>
+      <div class="nav-actions">
+        <div class="language-switch" role="group" aria-label="Taalkeuze" data-i18n-attr="aria-label:attr.languageSwitch">
+          <button class="lang-button" type="button" data-lang-switch="nl" aria-pressed="true" aria-label="Nederlands">
+            <span class="flag" aria-hidden="true">🇳🇱</span><span class="lang-code">NL</span>
+          </button>
+          <button class="lang-button" type="button" data-lang-switch="en" aria-pressed="false" aria-label="English">
+            <span class="flag" aria-hidden="true">🇬🇧</span><span class="lang-code">EN</span>
+          </button>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-i18n="global.menu">Menu</button>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <section class="page-hero">
-      <p class="eyebrow">About</p>
-      <h1>Analytical by nature, practical by preference.</h1>
-      <p>I work at the intersection of data, policy and improvement. I like understanding how information flows through an organization, where quality issues appear, and how better structure can make work easier.</p>
+      <p class="eyebrow" data-i18n="about.eyebrow">Over</p>
+      <h1 data-i18n="about.h1">Analytisch van aard, praktisch in aanpak.</h1>
+      <p data-i18n="about.lead">Ik werk op het snijvlak van data, beleid en verbetering. Ik vind het interessant om te begrijpen hoe informatie door een organisatie beweegt, waar kwaliteitsvraagstukken ontstaan en hoe betere structuur werk eenvoudiger maakt.</p>
     </section>
 
     <section class="content-grid two-col">
       <article class="text-block large">
-        <h2>Profile</h2>
-        <p>I am Lars Rosevink, Data Policy Advisor at Univ&eacute;. My work is centered around data quality, data governance and translating business context into clear, usable improvements.</p>
-        <p>Alongside my professional work, I enjoy building small software experiments. Some start from curiosity, others from a practical problem I notice in sports, data or everyday digital tools.</p>
+        <h2 data-i18n="about.profileTitle">Profiel</h2>
+        <p data-i18n="about.profileP1">Ik ben Lars Rosevink, data beleidsadviseur bij Univé. Mijn werk draait om datakwaliteit, datagovernance en het vertalen van businesscontext naar heldere, bruikbare verbeteringen.</p>
+        <p data-i18n="about.profileP2">Naast mijn werk bouw ik graag kleine software-experimenten. Soms ontstaan die uit nieuwsgierigheid, soms uit een praktisch probleem dat ik zie in sport, data of dagelijkse digitale tools.</p>
       </article>
       <aside class="side-note">
-        <h3>What I enjoy</h3>
+        <h3 data-i18n="about.enjoyTitle">Wat ik graag doe</h3>
         <ul class="clean-list">
-          <li>Making complex things understandable</li>
-          <li>Working with data and process context</li>
-          <li>Building small tools that solve a concrete problem</li>
-          <li>Learning by making</li>
+          <li data-i18n="about.enjoy1">Complexe dingen begrijpelijk maken</li>
+          <li data-i18n="about.enjoy2">Werken met data en procescontext</li>
+          <li data-i18n="about.enjoy3">Kleine tools bouwen voor concrete problemen</li>
+          <li data-i18n="about.enjoy4">Leren door te maken</li>
         </ul>
       </aside>
     </section>
 
     <section class="content-grid three-col">
       <article class="info-card">
-        <h2>Data</h2>
-        <p>Data quality, governance, analysis, SQL and Snowflake.</p>
+        <h2 data-i18n="about.dataTitle">Data</h2>
+        <p data-i18n="about.dataText">Datakwaliteit, governance, analyse, SQL en Snowflake.</p>
       </article>
       <article class="info-card">
-        <h2>Process</h2>
-        <p>Improvement, structure, decision logic and translating questions into workable steps.</p>
+        <h2 data-i18n="about.processTitle">Proces</h2>
+        <p data-i18n="about.processText">Verbetering, structuur, beslislogica en vragen vertalen naar werkbare stappen.</p>
       </article>
       <article class="info-card">
-        <h2>Building</h2>
-        <p>Small web applications, prototypes and experiments around sports, puzzles and data.</p>
+        <h2 data-i18n="about.buildingTitle">Bouwen</h2>
+        <p data-i18n="about.buildingText">Kleine webapplicaties, prototypes en experimenten rond sport, puzzels en data.</p>
       </article>
     </section>
 
   </main>
+
 
   <footer class="site-footer">
     <div class="footer-inner">
