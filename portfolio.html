@@ -1,133 +1,120 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio | Lars Rosevink</title>
-  <meta name="description" content="Een compact overzicht van projecten, experimenten en ideeën van Lars Rosevink rond data, sport en webontwikkeling.">
+  <meta name="description" content="A modest portfolio of digital experiments, prototypes and work in progress by Lars Rosevink.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://www.larsrosevink.nl/portfolio.html">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="nl_NL">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Portfolio | Lars Rosevink">
-  <meta property="og:description" content="Een compact overzicht van projecten, experimenten en ideeën van Lars Rosevink rond data, sport en webontwikkeling.">
+  <meta property="og:description" content="A modest portfolio of digital experiments, prototypes and work in progress by Lars Rosevink.">
   <meta property="og:url" content="https://www.larsrosevink.nl/portfolio.html">
-  <meta name="theme-color" content="#12213a">
+  <meta name="theme-color" content="#12344f">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Lars Rosevink",
+  "url": "https://www.larsrosevink.nl/",
+  "jobTitle": "Data Policy Advisor",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Univ\u00e9"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/lars-rosevink-8b160312b/"
+  ],
+  "email": "mailto:notifylars@gmail.com",
+  "knowsAbout": [
+    "Data quality",
+    "Data governance",
+    "SQL",
+    "Snowflake",
+    "Process improvement",
+    "Data analysis",
+    "Software development",
+    "Web development"
+  ]
+}</script>
 </head>
-
 <body data-page="portfolio">
-  <a class="skip-link" href="#main">Direct naar inhoud</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="container nav-shell">
-      <a class="brand" href="index.html" aria-label="Homepage van Lars Rosevink">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Lars Rosevink homepage">
         <span class="brand-mark" aria-hidden="true">LR</span>
         <span class="brand-text">Lars Rosevink</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Menu openen</span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hoofdnavigatie">
-        <a href="index.html">Home</a>
-        <a href="about.html">Over</a>
-        <a href="portfolio.html" aria-current="page">Portfolio</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+      <nav class="site-menu" id="site-menu" aria-label="Main navigation">
+        <a href="index.html" data-nav-page="home">Home</a>
+        <a href="about.html" data-nav-page="about">About</a>
+        <a href="portfolio.html" data-nav-page="portfolio">Portfolio</a>
+        <a href="resume.html" data-nav-page="resume">Resume</a>
+        <a href="contact.html" data-nav-page="contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="page-hero">
-      <div class="container narrow">
-        <p class="eyebrow">Portfolio</p>
-        <h1>Projecten en ideeën die stap voor stap groeien.</h1>
-        <p class="lead">
-          Ik bouw af en toe kleine toepassingen om iets te leren, uit te zoeken of gewoon omdat een idee blijft hangen.
-          Deze pagina groeit mee zodra projecten netjes genoeg zijn om hier te tonen.
-        </p>
-      </div>
+      <p class="eyebrow">Portfolio</p>
+      <h1>Experiments, prototypes and ideas in progress.</h1>
+      <p>This section is deliberately modest. I like building practical digital tools, but I would rather show work honestly than present unfinished ideas as finished products.</p>
     </section>
 
-    <section class="section">
-      <div class="container project-list">
-        <article class="project-card">
-          <div>
-            <p class="status">In ontwikkeling</p>
-            <h2>KNLTB Rating Calculator</h2>
-            <p>
-              Een toolidee rond tennisratings: snel kunnen zien wat winst of verlies ongeveer betekent voor een rating.
-              Interessant vanwege de combinatie van sportregels, berekeningslogica en duidelijke uitleg.
-            </p>
-          </div>
-          <dl>
-            <div><dt>Status</dt><dd>Prototypefase</dd></div>
-            <div><dt>Thema</dt><dd>Tennis, berekeningen en gebruikersgemak</dd></div>
-            <div><dt>Techniek</dt><dd>Webapp, JavaScript en datalogica</dd></div>
-          </dl>
-        </article>
+    <section class="project-list" aria-label="Portfolio projects">
+      <article class="project-card">
+        <div>
+          <p class="project-status">Exploratory prototype</p>
+          <h2>KNLTB Rating Calculator</h2>
+          <p>A small tennis-related tool idea for quick rating scenarios and what-if calculations.</p>
+        </div>
+        <dl>
+          <div><dt>Focus</dt><dd>Sports analytics</dd></div>
+          <div><dt>Technology</dt><dd>Web, JavaScript, data logic</dd></div>
+        </dl>
+      </article>
 
-        <article class="project-card">
-          <div>
-            <p class="status">Concept</p>
-            <h2>WK Pool</h2>
-            <p>
-              Een idee voor een voetbalpool met voorspellingen, standen en puntentellingen.
-              Leuk omdat het simpel klinkt, maar al snel vraagt om heldere regels en een nette datastructuur.
-            </p>
-          </div>
-          <dl>
-            <div><dt>Status</dt><dd>Idee / verkenning</dd></div>
-            <div><dt>Thema</dt><dd>Voetbal, scores en dashboards</dd></div>
-            <div><dt>Techniek</dt><dd>Nog te bepalen</dd></div>
-          </dl>
-        </article>
+      <article class="project-card">
+        <div>
+          <p class="project-status">Concept</p>
+          <h2>World Cup Pool</h2>
+          <p>An idea for a prediction pool with standings, scores and simple statistics.</p>
+        </div>
+        <dl>
+          <div><dt>Focus</dt><dd>Football, rankings, interaction</dd></div>
+          <div><dt>Technology</dt><dd>To be determined</dd></div>
+        </dl>
+      </article>
 
-        <article class="project-card">
-          <div>
-            <p class="status">Experiment</p>
-            <h2>Kaart- en puzzelconcepten</h2>
-            <p>
-              Kleine experimenten met oriëntatie, spelregels en puzzellogica. Niet alles hoeft meteen een afgerond product te zijn;
-              soms is het doel vooral om iets nieuws te begrijpen.
-            </p>
-          </div>
-          <dl>
-            <div><dt>Status</dt><dd>Losse prototypes</dd></div>
-            <div><dt>Thema</dt><dd>Spel, ruimtelijk inzicht en interactie</dd></div>
-            <div><dt>Techniek</dt><dd>HTML, CSS en JavaScript</dd></div>
-          </dl>
-        </article>
-
-        <article class="project-card">
-          <div>
-            <p class="status">Doorlopend</p>
-            <h2>Nieuwe ideeën</h2>
-            <p>
-              Er komen waarschijnlijk meer kleine projecten bij rond data, sport, AI en webontwikkeling.
-              Deze pagina blijft compact: liever een paar goede voorbeelden dan een lange lijst.
-            </p>
-          </div>
-          <dl>
-            <div><dt>Status</dt><dd>Doorlopend</dd></div>
-            <div><dt>Thema</dt><dd>Data, automatisering en leren door bouwen</dd></div>
-            <div><dt>Publicatie</dt><dd>Alleen wanneer het iets toevoegt</dd></div>
-          </dl>
-        </article>
-      </div>
+      <article class="project-card">
+        <div>
+          <p class="project-status">Ongoing</p>
+          <h2>Future experiments</h2>
+          <p>A place for smaller ideas around web development, puzzle logic, data quality and AI-assisted building.</p>
+        </div>
+        <dl>
+          <div><dt>Focus</dt><dd>Learning by making</dd></div>
+          <div><dt>Technology</dt><dd>HTML, CSS, JavaScript, SQL</dd></div>
+        </dl>
+      </article>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year">2026</span> Lars Rosevink.</p>
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Lars Rosevink</p>
       <p><a href="mailto:notifylars@gmail.com">notifylars@gmail.com</a></p>
     </div>
   </footer>
-  <script src="script.js" defer></script>
+
+  <script src="content.js"></script>
 </body>
 </html>
