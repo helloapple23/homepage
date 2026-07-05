@@ -1,33 +1,33 @@
-# larsrosevink.nl
+# Lars Rosevink personal website
 
-Statische persoonlijke website voor `https://www.larsrosevink.nl`.
+A static personal website for `larsrosevink.nl` with an original retro isometric room interface.
 
-De site is opgebouwd met gewone HTML, CSS en vanilla JavaScript. Er zijn geen frameworks, build tools of externe assets nodig. De bestanden kunnen rechtstreeks in de root van een GitHub-repository worden geplaatst en via Vercel worden gepubliceerd.
+## Files
 
-## Bestanden
+- `index.html` - homepage with interactive room
+- `about.html` - about page
+- `portfolio.html` - modest experiments / work-in-progress page
+- `resume.html` - concise resume page
+- `contact.html` - email and LinkedIn
+- `404.html` - not found page
+- `style.css` - all styling and room visuals
+- `game.js` - room movement and interaction logic
+- `content.js` - navigation and footer behavior
+- `robots.txt` - crawler instructions
+- `sitemap.xml` - sitemap
+- `favicon.svg` - favicon
 
-- `index.html` - homepage
-- `about.html` - achtergrond en interesses
-- `portfolio.html` - projecten en ideeën
-- `resume.html` - compacte loopbaanpagina
-- `contact.html` - e-mail en LinkedIn
-- `404.html` - foutpagina
-- `style.css` - styling
-- `script.js` - mobiele navigatie en jaartal
-- `favicon.svg` - eenvoudige favicon
-- `robots.txt` - crawler-instructies
-- `sitemap.xml` - sitemap voor zoekmachines
+## Deploying on Vercel
 
-## Publiceren via Vercel
+1. Create a GitHub repository.
+2. Upload all files to the root of the repository.
+3. Import the repository in Vercel.
+4. Use the default static deployment settings. No build command is required.
 
-1. Upload alle bestanden naar de root van je GitHub-repository.
-2. Importeer de repository in Vercel.
-3. Kies voor een statische site zonder build command.
-4. Koppel het domein `www.larsrosevink.nl` aan het Vercel-project.
+## Local preview
 
-## Aanpassen
+Open `index.html` directly in a browser. All links use relative paths and work locally.
 
-- Contactadres: wijzig `notifylars@gmail.com` in de HTML-bestanden.
-- LinkedIn-link: wijzig de URL in `index.html`, `contact.html` en de JSON-LD op de homepage.
-- Portfolio: voeg projecten toe in `portfolio.html` zodra ze geschikt zijn om te tonen.
-- Kleuren en spacing: pas de CSS-variabelen bovenaan `style.css` aan.
+## Notes
+
+The site uses only HTML, CSS and vanilla JavaScript. There are no external dependencies, cookies, tracking scripts or build tools.
